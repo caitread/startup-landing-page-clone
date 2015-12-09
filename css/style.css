@@ -1,12 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .top-navigation {
 	background-color: #fff;
+
 }
 .top-navigation > .content {
-	width: 970px;
-	height: 70px;
+	width: 60rem;
+	height: 4.375rem;
 	margin: 0 auto;
+	padding: 0px 15px;
+	
 }
-.logo{
-	margin-left: 20em;
+
+.top-navigation > .logo {
 	margin-top: 1em;
+}
+
+.top-navigation .links > li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	display: inline-block;
+	margin-left: 25px;
+	float: right;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+	cursor: pointer;
+	color: #333333;
+}
+
+.introduction {
+	background-image: url(startup-landing-page-clone/images/first-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
