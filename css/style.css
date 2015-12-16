@@ -24,9 +24,10 @@ body {
 }
 
 .content {
-	padding: 0 0.938rem;
+	padding: 0.5rem 0.938rem;
     margin: 0 auto;
     min-width: 37.5rem;	
+    width: 60%;
 }
 
 .top-navigation > .content {
@@ -74,4 +75,36 @@ body {
     color: white;
     text-align: center;
     font-weight: 300;
+}
+
+.introduction h1 {
+	margin-top: 150px;
+	font-size: 40px;
+}
+
+.introduction h3 {
+	margin-top: 0;
+	font-size: 20px;
+}
+
+button {
+	text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    margin-top: 15px;
+	font-size: 13px;
+	color: white;
+}
+
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
 }
