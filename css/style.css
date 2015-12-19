@@ -21,10 +21,11 @@ body {
     position: fixed;
     width: 100%;
     border-bottom: 1px solid #DDD;
+    z-index: 9999;
 }
 
 .content {
-	padding: 0.5rem 0.938rem;
+	padding: 0 0.938rem;
     margin: 0 auto;
     min-width: 37.5rem;	
     width: 60%;
@@ -32,21 +33,24 @@ body {
 
 .top-navigation > .content {
 	height: 4.375rem;
+	line-height: 4.375rem;
 	margin: 0 auto;
 }
 
-.top-navigation > .logo {
+.top-navigation .logo {
 	height: 4.375rem;
+	vertical-align: middle;
 }
 
 .top-navigation .links {
 	float: right;
     color: #838994;
-    font-size: 1.04rem;
-    margin-top: 1.7rem;
+    font-size: 1.04rem;    
 }
+
 .top-navigation .links > li {
 	display: inline-block;
+	vertical-align: middle;
     margin-left: 1.563rem;
 
 }
@@ -71,20 +75,27 @@ body {
 }
 
 .introduction h1,
-.introduction h3 {
+.introduction h3,
+.cases h2 {
     color: white;
     text-align: center;
-    font-weight: 300;
+	font-weight: 300 !important;
 }
 
 .introduction h1 {
-	margin-top: 150px;
+	margin-top: 220px;
 	font-size: 40px;
 }
 
 .introduction h3 {
-	margin-top: 0;
+	margin-top: -12px;
 	font-size: 20px;
+}
+
+.cases h2{
+	font-size: 2.75rem;
+	color: #1d1e21;
+	font-weight: 300;
 }
 
 button {
@@ -107,4 +118,27 @@ button:hover {
     background-color: #d9400e;
     border-color: #cf3d0e;
     cursor: pointer;
+}
+
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+    }
+
+.cases .devices > li {
+    width: 33.3333333%;
+    float:left;
+    list-style: none;
+}
+
+.cases .devices h3 {
+	font-size: 1.563rem;
+	font-weight: 400;
 }
